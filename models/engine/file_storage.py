@@ -35,7 +35,6 @@ class FileStorage:
         """
         if obj is not None and hasattr(obj, "to_dict"):
             key = f"{obj.__class__.__name__}.{obj.id}"
-            print(key)
             self.__objects[key] = obj
 
     def save(self):
