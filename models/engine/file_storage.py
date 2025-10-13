@@ -24,7 +24,7 @@ class FileStorage:
         if obj is None:
             return
 
-        key = f"{}.{}".format(obj.__class__.__name__, obj.id)
+        key = "{}.{}".format(obj.__class__.__name__, obj.id)
         if key in self.__objects:
             del self.__objects[key]
 
